@@ -1,0 +1,49 @@
+<!-- <h1>Add Reservation</h1>
+<form #form="ngForm" (ngSubmit)="Add()">
+    <input type="text" name="roomId" id="roomId" placeholder="roomId" [(ngModel)]="addReservation.roomId">
+    <input type="text" name="customerId" id="customerId" placeholder="customerId" [(ngModel)]="addReservation.customerId">
+    <input type="text" name="guestName" id="guestName" placeholder="guestName" [(ngModel)]="addReservation.guestName">
+    <input type="date" name="checkIn Date" id="checkIn Date" [(ngModel)]="addReservation.checkInDate">
+    <!-- <input type="text" name="checkIn Date" id="checkIn Date" placeholder="checkIn Date" [(ngModel)]="addReservation.checkInDate"> -->
+    <!-- <input type="text" name="checkOut Date" id="checkOut Date" placeholder="checkOut Date" [(ngModel)]="addReservation.checkOutDate"> -->
+    <!-- <input type="date" name="checkOut Date" id="checkOut Date" [(ngModel)]="addReservation.checkOutDate">
+
+    <button type="submit">Add</button>
+
+</form> -->
+<div class="center-container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="text-center">
+                    <form #form="ngForm" (ngSubmit)="Add()">
+                        <div class="form-group">
+                            <label for="roomId">Room Id : </label>&nbsp;
+                            <input type="text" name="roomId" id="roomId" placeholder="roomId" [(ngModel)]="addReservation.roomId">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerId">Customer Id : </label>&nbsp;
+                            <input type="text" name="customerId" id="customerId" placeholder="customerId" [(ngModel)]="addReservation.customerId">
+                        </div>
+                        <div class="form-group">
+                            <label for="guestName">Guest Name : </label>&nbsp;
+                            <input type="text" name="guestName" id="guestName" placeholder="guestName" [(ngModel)]="addReservation.guestName">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkIn Date">CheckIn Date : </label>&nbsp;
+                            <input type="date" name="checkIn Date" id="checkIn Date" [(ngModel)]="addReservation.checkInDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOut Date">CheckOut Date : </label>&nbsp;
+                            <input type="date" name="checkOut Date" id="checkOut Date" [(ngModel)]="addReservation.checkOutDate">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+

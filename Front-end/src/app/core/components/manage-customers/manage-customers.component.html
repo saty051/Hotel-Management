@@ -1,0 +1,80 @@
+<!-- <button [routerLink]="['/addCustomer']">Add Customer</button>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let customer of allCustomers">
+            <td>{{customer.customerId}}</td>
+            <td>{{customer.firstName}}</td>
+            <td>{{customer.lastName}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.phone}}</td>
+            <td><button (click)="Delete(customer.customerId)">Delete</button>
+                <button (click)="Update(customer.customerId)">Update</button></td>
+        </tr>
+    </table>
+</div> -->
+
+<br>
+<br>
+
+
+<div class="center-container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="text-right">
+                    <button class="btn btn-success" [routerLink]="['/addCustomer']">Add Customer</button>
+                </div>
+                <br>
+                
+                <table class="table table-bordered">
+                 <thead>
+        <tr>
+          <th scope="col" class="text-center">Id</th>
+          <th scope="col" class="text-center">First Name</th>
+          <th scope="col" class="text-center">Last Name</th>
+          <th scope="col" class="text-center">Email</th>
+          <th scope="col" class="text-center">Phone</th>
+          <th scope="col" class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of allCustomers">
+            <th class="text-center">{{customer.customerId}}</th>
+            <td class="text-center">{{customer.firstName}}</td>
+            <td class="text-center">{{customer.lastName}}</td>
+            <td class="text-center">{{customer.email}}</td>
+            <td class="text-center">{{customer.phone}}</td>
+            <td>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-2.9">
+                            <button class="btn btn-danger" (click)="Delete(customer.customerId)">Delete</button>
+                    </div>
+                    <div class="col-md-3">
+                            <button class="btn btn-primary" (click)="Update(customer.customerId)">Update</button>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,52 @@
+<!-- <h1>Update Room</h1>
+<form #form="ngForm" (ngSubmit)="Update()">
+    <input type="text" name="roomId" id="roomId" placeholder="roomId" [(ngModel)]="updateRoom.roomId" disabled>
+    <input type="text" name="hotelId" id="hotelId" placeholder="hotelId" [(ngModel)]="updateRoom.hotelId">
+    <input type="text" name="roomNumber" id="roomNumber" placeholder="roomNumber" [(ngModel)]="updateRoom.roomNumber">
+    <input type="text" name="capacity" id="capacity" placeholder="capacity" [(ngModel)]="updateRoom.capacity">
+    <input type="text" name="price" id="price" placeholder="price" [(ngModel)]="updateRoom.price">
+
+    <button type="submit">Update</button>
+
+</form> -->
+
+
+<br>
+<br>
+
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;Update Room</h4>
+<div class="center-container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="text-center">
+                    <form #form="ngForm" (ngSubmit)="Update()">
+        <div class="form-group">
+            <label for="roomId">Room Id : </label>&nbsp;
+            <input type="text" name="roomId" id="roomId" placeholder="roomId" [(ngModel)]="updateRoom.roomId" disabled>
+        </div>
+        <div class="form-group">
+            <label for="hotelId">Hotel Id : </label>&nbsp;
+            <input type="text" name="hotelId" id="hotelId" placeholder="hotelId" [(ngModel)]="updateRoom.hotelId">
+        </div>
+        <div class="form-group">
+            <label for="roomNumber">Room Number : </label>&nbsp;
+            <input type="text" name="roomNumber" id="roomNumber" placeholder="roomNumber" [(ngModel)]="updateRoom.roomNumber">
+        </div>
+        <div class="form-group">
+            <label for="capacity">Capacity : </label>&nbsp;
+            <input type="text" name="capacity" id="capacity" placeholder="capacity" [(ngModel)]="updateRoom.capacity">
+        </div>
+        <div class="form-group">
+            <label for="price">Price : </label>&nbsp;
+            <input type="text" name="price" id="price" placeholder="price" [(ngModel)]="updateRoom.price">
+        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>

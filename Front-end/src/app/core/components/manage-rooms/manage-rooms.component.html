@@ -1,0 +1,81 @@
+<!-- <button [routerLink]="['/addRoom']">Add Room</button>
+<div>
+    <table>
+        <tr>
+            <th>Room Id</th>
+            <th>Hotel Id</th>
+            <th>Room Number</th>
+            <th>Capacity</th>
+            <th>Price</th>
+
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let room of allRooms">
+            <td>{{room.roomId}}</td>
+            <td>{{room.hotelId}}</td>
+            <td>{{room.roomNumber}}</td>
+            <td>{{room.capacity}}</td>
+            <td>{{room.price}}</td>
+            <td><button (click)="Delete(room.roomId)">Delete</button>
+                <button (click)="Update( room.roomId)">Update</button></td>
+        </tr>
+    </table>
+</div> -->
+<br>
+<br>
+
+
+<div class="center-container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="text-right">
+                    <button class="btn btn-success" [routerLink]="['/addRoom']">Add Room</button>
+                </div>
+                <br>
+                
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">Room Id</th>
+                            <th scope="col" class="text-center">Hotel Id</th>
+                            <th scope="col" class="text-center">Room Number</th>
+                            <th scope="col" class="text-center">Capacity</th>
+                            <th scope="col" class="text-center">Price</th>
+                            <th scope="col" class="text-center">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let room of allRooms">
+                                <td class="text-center">{{room.roomId}}</td>
+                                <td class="text-center">{{room.hotelId}}</td>
+                                <td class="text-center">{{room.roomNumber}}</td>
+                                <td class="text-center">{{room.capacity}}</td>
+                                <td class="text-center">{{room.price}}</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-2.9">
+                                            <button class="btn btn-danger" (click)="Delete(room.roomId)">Delete</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                                <button class="btn btn-primary" (click)="Update(room.roomId)">Update</button>
+                                            </div>
+                                            <div class="col-md-3">
+                        
+                                            </div>
+                        
+                                        </div>
+                                    </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    
+                                </div>
+                        
+                            </div>
+                        </div>

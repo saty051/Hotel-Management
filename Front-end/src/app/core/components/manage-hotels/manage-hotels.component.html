@@ -1,0 +1,81 @@
+<!-- <button [routerLink]="['/addHotel']">Add Hotel</button>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Rating</th>
+
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let hotel of allHotels">
+            <td>{{hotel.hotelId}}</td>
+            <td>{{hotel.name}}</td>
+            <td>{{hotel.address}}</td>
+            <td>{{hotel.rating}}</td>
+            <td><button (click)="Delete(hotel.hotelId)">Delete</button>
+                <button (click)="Update(hotel.hotelId)">Update</button></td>
+        </tr>
+    </table>
+</div> -->
+<br>
+<br>
+
+
+<div class="center-container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="text-right">
+                    <button class="btn btn-success" [routerLink]="['/addHotel']">Add Hotel</button>
+                </div>
+                <br>
+                
+                <table class="table table-bordered">
+                    <thead>
+        <tr>
+          <th scope="col" class="text-center">Id</th>
+          <th scope="col" class="text-center">Name</th>
+          <th scope="col" class="text-center">Address</th>
+          <th scope="col" class="text-center">Rating</th>
+          <th scope="col" class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hotel of allHotels">
+            <th class="text-center">{{hotel.hotelId}}</th>
+            <td class="text-center">{{hotel.name}}</td>
+            <td class="text-center">{{hotel.address}}</td>
+            <td class="text-center">{{hotel.rating}}</td>
+            <td>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
+                            <button class="btn btn-danger" (click)="Delete(hotel.hotelId)">Delete</button>
+                    </div>
+                    <div class="col-md-3">
+                            <button class="btn btn-primary" (click)="Update(hotel.hotelId)">Update</button>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+            </div>
+            <div class="col-md-2"></div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+    

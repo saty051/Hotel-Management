@@ -1,0 +1,88 @@
+<!-- <button [routerLink]="['/addReservation']">Add Reservation</button>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Room Id</th>
+            <th>Customer Id</th>
+            <th>Guest Name</th>
+            <th>CheckIn Date</th> 
+            <th>CheckOut Date</th>
+
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let reservation of allReservations">
+            <td>{{reservation.reservationId}}</td>
+            <td>{{reservation.roomId}}</td>
+            <td>{{reservation.customerId}}</td>
+            <td>{{reservation.guestName}}</td>
+            <td>{{reservation.checkInDate}}</td>
+            <td>{{reservation.checkOutDate}}</td>
+            <td><button (click)="Delete(reservation.reservationId)">Delete</button>
+                <button (click)="Update( reservation.reservationId)">Update</button></td>
+        </tr>
+    </table>
+</div> -->
+<br>
+<br>
+
+
+<div class="center-container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="text-right">
+                    <button class="btn btn-success" [routerLink]="['/addReservation']">Add Reservation</button>
+                </div>
+                <br>
+                
+                <table class="table table-bordered">
+                    <thead>
+         <tr>
+            <th scope="col" class="text-center">Id</th>
+            <th scope="col" class="text-center">Room Id</th>
+            <th scope="col" class="text-center">Customer Id</th>
+            <th scope="col" class="text-center">Guest Name</th>
+            <th scope="col" class="text-center">CheckIn Date</th> 
+            <th scope="col" class="text-center">CheckOut Date</th>
+            <th scope="col" class="text-center">Action</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr *ngFor="let reservation of allReservations">
+            <th class="text-center">{{reservation.reservationId}}</th>
+            <td class="text-center">{{reservation.roomId}}</td>
+            <td class="text-center">{{reservation.customerId}}</td>
+            <td class="text-center">{{reservation.guestName}}</td>
+            <td class="text-center">{{reservation.checkInDate}}</td>
+            <td class="text-center">{{reservation.checkOutDate}}</td>
+            <td>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-4">
+                            <button class="btn btn-danger" (click)="Delete(reservation.reservationId)">Delete</button>
+                    </div>
+                    <div class="col-md-4">
+                            <button class="btn btn-primary" (click)="Update(reservation.reservationId)">Update</button>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+            </div>
+            <div class="col-md-1"></div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+
