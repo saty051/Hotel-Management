@@ -1,0 +1,26 @@
+2024-03-10 05:39:17.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/api/Reservation/All - -
+2024-03-10 05:39:17.874 +05:30 [INF] Executing endpoint 'HotelManagementApplication.Controllers.ReservationController.GetReservationsAsync (HotelManagementApplication)'
+2024-03-10 05:39:17.943 +05:30 [INF] Route matched with {action = "GetReservations", controller = "Reservation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HotelManagementApplication.BLL.DTOs.ReservationDTO]]] GetReservationsAsync() on controller HotelManagementApplication.Controllers.ReservationController (HotelManagementApplication).
+2024-03-10 05:39:21.067 +05:30 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-03-10 05:39:21.077 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Room'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-03-10 05:39:21.415 +05:30 [INF] Entity Framework Core 6.0.26 initialized 'HotelDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.26' with options: None
+2024-03-10 05:39:21.429 +05:30 [INF] GetResrevations method started
+2024-03-10 05:39:23.787 +05:30 [INF] Executed DbCommand (234ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[ReservationId], [r].[CheckInDate], [r].[CheckOutDate], [r].[CustomerId], [r].[GuestName], [r].[RoomId]
+FROM [Reservations] AS [r]
+2024-03-10 05:39:24.089 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelManagementApplication.BLL.DTOs.ReservationDTO, HotelManagementApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-10 05:39:24.158 +05:30 [INF] Executed action HotelManagementApplication.Controllers.ReservationController.GetReservationsAsync (HotelManagementApplication) in 6182.2201ms
+2024-03-10 05:39:24.191 +05:30 [INF] Executed endpoint 'HotelManagementApplication.Controllers.ReservationController.GetReservationsAsync (HotelManagementApplication)'
+2024-03-10 05:39:24.233 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/api/Reservation/All - - - 200 - application/json;+charset=utf-8 6444.0644ms
+2024-03-10 05:39:49.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/api/Room/All - -
+2024-03-10 05:39:49.744 +05:30 [INF] Executing endpoint 'HotelManagementApplication.Controllers.RoomController.GetRoomsAsync (HotelManagementApplication)'
+2024-03-10 05:39:49.762 +05:30 [INF] Route matched with {action = "GetRooms", controller = "Room"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HotelManagementApplication.BLL.DTOs.RoomDTO]]] GetRoomsAsync() on controller HotelManagementApplication.Controllers.RoomController (HotelManagementApplication).
+2024-03-10 05:39:49.956 +05:30 [INF] Entity Framework Core 6.0.26 initialized 'HotelDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.26' with options: None
+2024-03-10 05:39:49.988 +05:30 [INF] GetRooms method started
+2024-03-10 05:39:50.123 +05:30 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RoomId], [r].[Capacity], [r].[HotelId], [r].[Price], [r].[RoomNumber]
+FROM [Rooms] AS [r]
+2024-03-10 05:39:50.239 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelManagementApplication.BLL.DTOs.RoomDTO, HotelManagementApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-10 05:39:50.324 +05:30 [INF] Executed action HotelManagementApplication.Controllers.RoomController.GetRoomsAsync (HotelManagementApplication) in 546.0631ms
+2024-03-10 05:39:50.378 +05:30 [INF] Executed endpoint 'HotelManagementApplication.Controllers.RoomController.GetRoomsAsync (HotelManagementApplication)'
+2024-03-10 05:39:50.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/api/Room/All - - - 200 - application/json;+charset=utf-8 686.5211ms

@@ -1,0 +1,21 @@
+2024-02-22 15:37:12.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/swagger/index.html - -
+2024-02-22 15:37:12.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/swagger/index.html - - - 200 - text/html;charset=utf-8 90.0479ms
+2024-02-22 15:37:12.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/_vs/browserLink - -
+2024-02-22 15:37:12.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/_framework/aspnetcore-browser-refresh.js - -
+2024-02-22 15:37:12.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/_framework/aspnetcore-browser-refresh.js - - - 200 13788 application/javascript;+charset=utf-8 9.6011ms
+2024-02-22 15:37:13.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.5400ms
+2024-02-22 15:37:15.247 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/swagger/v1/swagger.json - -
+2024-02-22 15:37:15.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.8216ms
+2024-02-22 15:37:40.090 +05:30 [INF] Now listening on: https://localhost:7055
+2024-02-22 15:37:40.488 +05:30 [INF] Now listening on: http://localhost:5002
+2024-02-22 15:37:41.301 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-22 15:37:41.674 +05:30 [INF] Hosting environment: Development
+2024-02-22 15:37:41.712 +05:30 [INF] Content root path: C:\C#\HotelManagement\HotelManagementApplication\
+2024-02-22 15:37:43.870 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/swagger/index.html - -
+2024-02-22 15:37:46.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/swagger/index.html - - - 200 - text/html;charset=utf-8 2411.6784ms
+2024-02-22 15:37:46.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/_vs/browserLink - -
+2024-02-22 15:37:46.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/_framework/aspnetcore-browser-refresh.js - -
+2024-02-22 15:37:46.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/_framework/aspnetcore-browser-refresh.js - - - 200 13788 application/javascript;+charset=utf-8 81.5348ms
+2024-02-22 15:37:47.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 611.3649ms
+2024-02-22 15:37:48.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7055/swagger/v1/swagger.json - -
+2024-02-22 15:37:48.849 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7055/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 577.8190ms
